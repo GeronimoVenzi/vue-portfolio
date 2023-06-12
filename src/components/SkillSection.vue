@@ -68,25 +68,12 @@ export default {
 .logo-container {
   text-align: center;
   margin-bottom: 20px;
-  animation-duration: 1s; /* duracion de la animacion */
-  animation-fill-mode: both; /* mantener los estilos finales después de la animacion */
-  animation-timing-function: ease-in-out; /* función de temporización de la animacion */
-  animation-iteration-count: infinite; /* repetir la animacion infinitamente */
+  transition: transform 0.5s linear;
 }
 
 .logo-container:hover {
-  animation-name: rotateAnimation; /* nombre de la animacion para el estado de hover */
+  transform: scale(1.3);
 }
-
-@keyframes rotateAnimation {
-  0% {
-    transform: rotate(0deg); /* estado inicial de rotacion */
-  }
-  100% {
-    transform: rotate(360deg); /* estado final de rotacion */
-  }
-}
-
 .logo {
   width: 100px;
   height: auto;

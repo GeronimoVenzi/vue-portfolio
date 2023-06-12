@@ -2,6 +2,8 @@
   <NavBar/>
   <Presentation/>
   <SkillSection/>
+  <ProjectsSection/>
+  <ContactSection/>
   <router-view/>
 </template>
 
@@ -9,6 +11,8 @@
 import NavBar from "@/components/NavBar.vue";
 import Presentation from "@/components/Presentation.vue";
 import SkillSection from "@/components/SkillSection.vue";
+import ContactSection from "@/components/ContactSection.vue";
+import ProjectsSection from './components/ProjectsSection.vue';
 
   export default {
     name: 'App',
@@ -16,6 +20,8 @@ import SkillSection from "@/components/SkillSection.vue";
       NavBar,
       Presentation,
       SkillSection,
+      ContactSection,
+      ProjectsSection
     }
   }
 </script>
